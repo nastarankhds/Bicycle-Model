@@ -21,7 +21,7 @@ First, we derive the **front** and **rear** slip angles from the geometry in the
 
 - **Body frame at CoG** 
 
-- **Wheel-plane unit vectors (front steered by  \(\delta\) )**
+- **Wheel-plane unit vectors (front steered by  (\delta\) )**
 
 $$
 \mathbf e_{xF}=
