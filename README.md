@@ -159,5 +159,5 @@ $$
 $$
 
 $$
-\dot{r} = \frac{c_f l_f - c_r l_r}{i_z v_x} {v_y} + \frac{c_f {l_r}^2 + c_r {l_r}^2}{i_z v_x} \dot{r} - \frac{c_f l_f} {m v_x} \{\delta}
+\dot{r} = \frac{c_f l_f - c_r l_r}{i_z v_x} {v_y} + \frac{c_f {l_r}^2 + c_r {l_r}^2}{i_z v_x} \{r} - \frac{c_f l_f} {m v_x} \{\delta}
 $$
