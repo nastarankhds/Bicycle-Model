@@ -96,6 +96,8 @@ $$
 \alpha_r=\mathrm{atan2}(V_{yR},\,V_{xR}).
 $$
 
-*Linearized (small angles):* $ \alpha_f \approx \dfrac{v+l_f r}{u}-\delta,\quad \alpha_r \approx \dfrac{v-l_r r}{u}. $
+*Linearized (small angles):* 
+$$ \alpha_f \approx \dfrac{v+l_f r}{u}-\delta $$
+$$ \alpha_r \approx \dfrac{v-l_r r}{u} $$
 
 
