@@ -123,3 +123,8 @@ $$
 $$
 \{\{fy_f}*cos({\delta}) + \{fyr_r} } = \{m * ({\dot{v_y}} + \{v_x}*r)}
 $$
+
+after substitution:
+$$
+\{dot{v_y}} = \frac{c_r + c_f}{mv_x}
+$$
