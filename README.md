@@ -133,6 +133,7 @@ $$
 considering: 
 
 Linear Tire Model: 
+
 $$
 \{fy_f} = \{c_f*{\alpha}_f }
 $$
