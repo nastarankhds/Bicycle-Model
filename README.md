@@ -55,7 +55,7 @@ $$
 
 ### Wheel-Center Velocities (rigid-body kinematics)
 
-Let $\u$ be longitudinal speed at CoG, $\v$ lateral speed at CoG, \(r\) yaw rate, \(l_f\) front axle distance, \(l_r\) rear axle distance.
+Let $u$ be longitudinal speed at CoG, $v$ lateral speed at CoG, $r$ yaw rate, $l_f$ front axle distance, $l_r$ rear axle distance.
 
 $$
 \mathbf v_F^{\text{body}}=
