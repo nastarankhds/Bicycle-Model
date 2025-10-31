@@ -23,65 +23,60 @@ $$
 
 
 
-# Slip Angle Calculation (Bicycle Model)
+## Slip Angle Calculation (Bicycle Model)
 
-<!-- Optional figure (edit path/URL as needed) -->
-<p align="center">
-  <img src="assets/bicycle_fbd.png" alt="Bicycle model free-body diagram" width="520">
-  <br><em>Figure — Geometry and vectors used for slip angles</em>
-</p>
+First, we derive the **front** and **rear** slip angles from the geometry in the figure.
 
-## Frames and Vectors
-- **Body frame at CoG:** \( \mathbf{i}_x \) along \(x_{\text{CoG}}\), \( \mathbf{i}_y \) along \(y_{\text{CoG}} \).
-- **Wheel-plane frames**
-  - **Front (steered by \(\delta\))**
-    \[
-    \mathbf{e}_{xF}=\begin{bmatrix}\cos\delta\\ \sin\delta\end{bmatrix},\quad
-    \mathbf{e}_{yF}=\begin{bmatrix}-\sin\delta\\ \cos\delta\end{bmatrix}.
-    \]
-  - **Rear (no steer)**
-    \[
-    \mathbf{e}_{xR}=\begin{bmatrix}1\\0\end{bmatrix},\quad
-    \mathbf{e}_{yR}=\begin{bmatrix}0\\1\end{bmatrix}.
-    \]
+![Bicycle model free-body diagram](assets/bicycle_fbd.png)
+*Figure — Geometry and vectors used for slip angles*
 
-## Wheel-Center Velocities (Rigid-Body Kinematics)
-Let \(u\) be longitudinal speed at CoG, \(v\) lateral speed at CoG, \(r\) yaw rate, \(a\) front axle offset, \(b\) rear axle offset.
-\[
-\mathbf{v}_F^{\text{body}}=\begin{bmatrix}u\\ v+a r\end{bmatrix},\qquad
-\mathbf{v}_R^{\text{body}}=\begin{bmatrix}u\\ v-b r\end{bmatrix}.
-\]
+### Frames and Unit Vectors
+- **Body frame at CoG:** \( \mathbf i_x \) along \( x_{\text{CoG}} \), \( \mathbf i_y \) along \( y_{\text{CoG}} \).
+- **Wheel-plane unit vectors**
+  
+  Front wheel steered by \( \delta \):
+  $$
+  \mathbf e_{xF}=
+  \begin{bmatrix}
+  \cos\delta\\
+  \sin\delta
+  \end{bmatrix},
+  \qquad
+  \mathbf e_{yF}=
+  \begin{bmatrix}
+  -\sin\delta\\
+  \cos\delta
+  \end{bmatrix}.
+  $$
 
-## Projections onto Wheel Axes
-Front wheel (project \(\mathbf{v}_F\) onto wheel axes):
-\[
-V_{xF}= \mathbf{v}_F\!\cdot\!\mathbf{e}_{xF}
-= u\cos\delta+(v+a r)\sin\delta,
-\]
-\[
-V_{yF}= \mathbf{v}_F\!\cdot\!\mathbf{e}_{yF}
-= -u\sin\delta+(v+a r)\cos\delta.
-\]
+  Rear wheel (no steer):
+  $$
+  \mathbf e_{xR}=
+  \begin{bmatrix}
+  1\\
+  0
+  \end{bmatrix},
+  \qquad
+  \mathbf e_{yR}=
+  \begin{bmatrix}
+  0\\
+  1
+  \end{bmatrix}.
+  $$
 
-Rear wheel:
-\[
-V_{xR}=u,\qquad V_{yR}=v-b r.
-\]
+### Wheel-Center Velocities (rigid-body kinematics)
+Let \(u\) be longitudinal speed at CoG, \(v\) lateral speed at CoG, \(r\) yaw rate, \(a\) front axle distance from CoG, \(b\) rear axle distance from CoG.
 
-## Slip Angles (Definition in Wheel Frames)
-Angle between wheel plane and wheel-center velocity:
-\[
-\boxed{\alpha_f=\operatorname{atan2}(V_{yF},\,V_{xF})},\qquad
-\boxed{\alpha_r=\operatorname{atan2}(V_{yR},\,V_{xR})}.
-\]
-
-### Linearized Form (small \(\beta,\ ar/u,\ br/u,\ \delta\))
-Using \(\beta=\arctan(v/u)\approx v/u\):
-\[
-\alpha_f \approx \beta+\frac{a r}{u}-\delta,\qquad
-\alpha_r \approx \beta-\frac{b r}{u}.
-\]
-
-## Notes
-- Angles in radians. Keep a small floor on \(u\) in code to avoid division spikes.
-- Sign convention: left turn \(r>0\), \(\delta>0\), \(v>0\) gives positive \(\alpha_f,\alpha_r\).
+$$
+\mathbf v_F^{\text{body}}=
+\begin{bmatrix}
+u\\
+v+a r
+\end{bmatrix},
+\qquad
+\mathbf v_R^{\text{body}}=
+\begin{bmatrix}
+u\\
+v-b r
+\end{bmatrix}.
+$$
