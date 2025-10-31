@@ -12,20 +12,10 @@ Base on this figure and its shown vectors such as velocity, sideslip angle, slip
 
 First of all, let's derive the **slip angle formulations in the front and rear**:
 
-if we consider the body frame at COG, for front and rear we have:
-
-$$ \{e_\{xf}} = \beginmetrix{bmatrix}
-\{cos[\{delta})} \\
-\{sin(\{delta})}
-$$
-
 
 ## Slip Angle Calculation (Bicycle Model)
 
 First, we derive the **front** and **rear** slip angles from the geometry in the figure.
-
-![Bicycle model free-body diagram](assets/bicycle_fbd.png)
-*Figure — Geometry and vectors used for slip angles*
 
 ### Frames and Unit Vectors
 
