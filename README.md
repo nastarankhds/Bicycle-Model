@@ -113,6 +113,9 @@ $$ \alpha_r \approx {\beta} - \dfrac{l_r r}{u} $$
 
 we start with the most basic rule in physics:
 
+
+#### $\beta:
+
 $$
 \{\sum{F_y}} = \{m}*{a_y}
 $$
