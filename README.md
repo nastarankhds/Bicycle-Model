@@ -140,3 +140,13 @@ $$
 $$
 \dot{r} = \frac{c_f l_f - c_r l_r}{i_z v_x} {v_y} + \frac{c_f {l_r}^2 + c_r {l_r}^2}{i_z v_x} \dot{r} - \frac{c_f l_f} {m v_x} \{\delta}
 $$
+
+for $\beta$ and $r$ :
+
+$$
+\dot{\beta} = \frac{c_r + c_f}{m {v_x}^2} \{\beta} + (\frac{c_f l_f - c_r l_r}{m {v_x}^2}- \{1}) r - \frac{c_f}{m v_x} \{\delta}
+$$
+
+$$
+\dot{r} = \frac{c_f l_f - c_r l_r}{i_z v_x} {v_y} + \frac{c_f {l_r}^2 + c_r {l_r}^2}{i_z v_x} \dot{r} - \frac{c_f l_f} {m v_x} \{\delta}
+$$
