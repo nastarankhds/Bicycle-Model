@@ -114,5 +114,9 @@ $$ \alpha_r \approx {\beta} - \dfrac{l_r r}{u} $$
 we start with the basicest rule in physics:
 
 $$
-\{\sum{F}} = 
+\{\sum{F_y}} = \{m}*{a_y}
+$$
+
+$$
+\{fy_f*cos(\delta) + fyr_r } = \{m * (\dot{v_y} + r*v_x)}
 $$
