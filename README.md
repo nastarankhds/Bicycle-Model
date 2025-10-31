@@ -140,6 +140,7 @@ $$
 
 $$
 \{fy_r} = \{c_r*{\alpha}_r }
+$$
 
 and after substitution:
 
