@@ -61,13 +61,13 @@ $$
 \mathbf v_F^{\text{body}}=
 \begin{bmatrix}
 u\\
-v+a r
+v+l_f r
 \end{bmatrix},
 \qquad
 \mathbf v_R^{\text{body}}=
 \begin{bmatrix}
 u\\
-v-b r
+v-l_r r
 \end{bmatrix}.
 $$
 
@@ -76,9 +76,9 @@ $$
 Front wheel:
 
 $$
-V_{xF}=u\cos\delta+(v+a r)\sin\delta,
+V_{xF}=u\cos\delta+(v+l_r r)\sin\delta,
 \qquad
-V_{yF}=-u\sin\delta+(v+a r)\cos\delta.
+V_{yF}=-u\sin\delta+(v+l_f r)\cos\delta.
 $$
 
 Rear wheel:
@@ -86,7 +86,7 @@ Rear wheel:
 $$
 V_{xR}=u,
 \qquad
-V_{yR}=v-b r.
+V_{yR}=v-l_r r.
 $$
 
 ### Slip Angles (wheel-frame definition)
