@@ -129,3 +129,5 @@ after substitution:
 $$
 \dot{v_y} = \frac{c_r + c_f}{mv_x} * \{v_y} + (\frac{c_f l_f - c_r l_r}{mv_x}-\{v_x})* r - \frac{c_f}{m} *\{\delta}
 $$
+
+$$ \{r} $$ :
