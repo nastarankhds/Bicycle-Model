@@ -114,13 +114,17 @@ $$ \alpha_r \approx {\beta} - \dfrac{l_r r}{u} $$
 we start with the most basic rule in physics:
 
 
-#### $\beta$:
+$\beta$:
 
 $$
 \{\sum{F_y}} = \{m}*{a_y}
 $$
 
-also: 
+$$
+\{\{fy_f}*cos({\delta}) + \{fyr_r} } = \{m * ({\dot{v_y}} + \{v_x}*r)}
+$$
+
+also $r$ : 
 
 $$
 \{\{fy_f}* cos({\delta})* {l_f} + \{fyr_r}* {l_r} } = \dot{r}* {i_z}
@@ -130,17 +134,8 @@ $$
 after substitution:
 
 $$
-\{\{fy_f}*cos({\delta}) + \{fyr_r} } = \{m * ({\dot{v_y}} + \{v_x}*r)}
-$$
-
-$$
 \dot{v_y} = \frac{c_r + c_f}{mv_x} * \{v_y} + (\frac{c_f l_f - c_r l_r}{mv_x}-\{v_x})* r - \frac{c_f}{m} *\{\delta}
 $$
-
-$r$ :
-
-
-
 
 $$
 \dot{r} = \frac{c_f l_f - c_r l_r}{i_z v_x} {v_y} + \frac{c_f {l_r}^2 + c_r {l_r}^2}{i_z v_x} \dot{r} - \frac{c_f l_f} {m v_x} \{\delta}
