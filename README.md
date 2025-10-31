@@ -12,4 +12,9 @@ Base on this figure and its shown vectors such as velocity, sideslip angle, slip
 
 First of all, let's derive the **slip angle formulations in the front and rear**:
 
+if we consider the body frame at COG, for front and rear we have:
 
+$$ \{e_\{xf}} = \beginmetrix{bmatrix}
+\{cos[\{delta})} \\
+\{sin(\{delta})}
+$$
