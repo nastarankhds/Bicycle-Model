@@ -118,5 +118,5 @@ $$
 $$
 
 $$
-\{\{fy_f}*cos({\delta}) + \{fyr_r} } = \{m * ({\dot{v_y}} + r*v_x)}
+\{\{fy_f}*cos({\delta}) + \{fyr_r} } = \{m * ({\dot{v_y}} + r*\{v_x})}
 $$
