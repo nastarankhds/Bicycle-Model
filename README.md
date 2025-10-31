@@ -126,5 +126,5 @@ $$
 
 after substitution:
 $$
-\{dot{v_y}} = \frac{c_r + c_f}{mv_x}
+\dot{v_y} = \frac{c_r + c_f}{mv_x}
 $$
