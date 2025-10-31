@@ -92,10 +92,10 @@ $$
 ### Slip Angles (wheel-frame definition)
 
 $$
-\alpha_f=\operatorname{atan2}(V_{yF},\,V_{xF}),
-\qquad
-\alpha_r=\operatorname{atan2}(V_{yR},\,V_{xR}).
+\alpha_f=\mathrm{atan2}(V_{yF},\,V_{xF}),\qquad
+\alpha_r=\mathrm{atan2}(V_{yR},\,V_{xR}).
 $$
 
-*Linearized (small angles):* \( \alpha_f \approx \dfrac{v+a r}{u}-\delta,\quad \alpha_r \approx \dfrac{v-b r}{u}. \)
+*Linearized (small angles):* $ \alpha_f \approx \dfrac{v+l_f r}{u}-\delta,\quad \alpha_r \approx \dfrac{v-l_r r}{u}. $
+
 
