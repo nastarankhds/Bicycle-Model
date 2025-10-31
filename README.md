@@ -130,8 +130,16 @@ $$
 \{\{fy_f}* cos({\delta})* {l_f} + \{fyr_r}* {l_r} } = \dot{r}* {i_z}
 $$
 
+considering: 
 
-after substitution:
+Linear Tire Model: 
+$$
+\{fy_f} = \{c_f*{\alpha}_f }
+$$
+$$
+\{fy_r} = \{c_r*{\alpha}_r }
+
+and after substitution:
 
 $$
 \dot{v_y} = \frac{c_r + c_f}{mv_x} \{v_y} + (\frac{c_f l_f - c_r l_r}{mv_x}-\{v_x}) r - \frac{c_f}{m} \{\delta}
