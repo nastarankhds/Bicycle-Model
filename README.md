@@ -97,7 +97,9 @@ $$
 $$
 
 *Linearized (small angles):* 
-$$ \alpha_f \approx \dfrac{v+l_f r}{u}-\delta $$
+
+$$ \alpha_f \approx \dfrac{v+l_f r}{u}-{\delta} $$
+
 $$ \alpha_r \approx \dfrac{v-l_r r}{u} $$
 
 
