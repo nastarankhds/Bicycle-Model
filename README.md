@@ -120,11 +120,18 @@ $$
 \{\sum{F_y}} = \{m}*{a_y}
 $$
 
+also: 
+
+$$
+\{\{fy_f}* cos({\delta})* {l_f} + \{fyr_r}* {l_r} } = \dot{r}* {i_z}
+$$
+
+
+after substitution:
+
 $$
 \{\{fy_f}*cos({\delta}) + \{fyr_r} } = \{m * ({\dot{v_y}} + \{v_x}*r)}
 $$
-
-after substitution:
 
 $$
 \dot{v_y} = \frac{c_r + c_f}{mv_x} * \{v_y} + (\frac{c_f l_f - c_r l_r}{mv_x}-\{v_x})* r - \frac{c_f}{m} *\{\delta}
@@ -132,9 +139,7 @@ $$
 
 $r$ :
 
-$$
-\{\{fy_f}* cos({\delta})* {l_f} + \{fyr_r}* {l_r} } = \dot{r}* {i_z}
-$$
+
 
 
 $$
