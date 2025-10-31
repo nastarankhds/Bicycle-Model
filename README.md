@@ -19,7 +19,7 @@ First, we derive the **front** and **rear** slip angles from the geometry in the
 
 ### Frames and Unit Vectors
 
-- **Body frame at CoG:** \( \mathbf i_x \) along \( x_{\text{CoG}} \), \( \mathbf i_y \) along \( y_{\text{CoG}} \).
+- **Body frame at CoG** 
 
 - **Wheel-plane unit vectors (front steered by \( \delta \))**
 
