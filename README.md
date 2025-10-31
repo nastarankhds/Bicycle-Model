@@ -20,9 +20,6 @@ $$ \{e_\{xf}} = \beginmetrix{bmatrix}
 $$
 
 
-
-
-
 ## Slip Angle Calculation (Bicycle Model)
 
 First, we derive the **front** and **rear** slip angles from the geometry in the figure.
@@ -31,41 +28,44 @@ First, we derive the **front** and **rear** slip angles from the geometry in the
 *Figure — Geometry and vectors used for slip angles*
 
 ### Frames and Unit Vectors
-- **Body frame at CoG:** \( \mathbf i_x \) along \( x_{\text{CoG}} \), \( \mathbf i_y \) along \( y_{\text{CoG}} \).
-- **Wheel-plane unit vectors**
-  
-  Front wheel steered by \( \delta \):
-  $$
-  \mathbf e_{xF}=
-  \begin{bmatrix}
-  \cos\delta\\
-  \sin\delta
-  \end{bmatrix},
-  \qquad
-  \mathbf e_{yF}=
-  \begin{bmatrix}
-  -\sin\delta\\
-  \cos\delta
-  \end{bmatrix}.
-  $$
 
-  Rear wheel (no steer):
-  $$
-  \mathbf e_{xR}=
-  \begin{bmatrix}
-  1\\
-  0
-  \end{bmatrix},
-  \qquad
-  \mathbf e_{yR}=
-  \begin{bmatrix}
-  0\\
-  1
-  \end{bmatrix}.
-  $$
+- **Body frame at CoG:** \( \mathbf i_x \) along \( x_{\text{CoG}} \), \( \mathbf i_y \) along \( y_{\text{CoG}} \).
+
+- **Wheel-plane unit vectors (front steered by \( \delta \))**
+
+$$
+\mathbf e_{xF}=
+\begin{bmatrix}
+\cos\delta\\
+\sin\delta
+\end{bmatrix},
+\qquad
+\mathbf e_{yF}=
+\begin{bmatrix}
+-\sin\delta\\
+\cos\delta
+\end{bmatrix}.
+$$
+
+- **Wheel-plane unit vectors (rear, no steer)**
+
+$$
+\mathbf e_{xR}=
+\begin{bmatrix}
+1\\
+0
+\end{bmatrix},
+\qquad
+\mathbf e_{yR}=
+\begin{bmatrix}
+0\\
+1
+\end{bmatrix}.
+$$
 
 ### Wheel-Center Velocities (rigid-body kinematics)
-Let \(u\) be longitudinal speed at CoG, \(v\) lateral speed at CoG, \(r\) yaw rate, \(a\) front axle distance from CoG, \(b\) rear axle distance from CoG.
+
+Let \(u\) be longitudinal speed at CoG, \(v\) lateral speed at CoG, \(r\) yaw rate, \(a\) front axle distance, \(b\) rear axle distance.
 
 $$
 \mathbf v_F^{\text{body}}=
@@ -80,3 +80,32 @@ u\\
 v-b r
 \end{bmatrix}.
 $$
+
+### Projections onto Wheel Axes
+
+Front wheel:
+
+$$
+V_{xF}=u\cos\delta+(v+a r)\sin\delta,
+\qquad
+V_{yF}=-u\sin\delta+(v+a r)\cos\delta.
+$$
+
+Rear wheel:
+
+$$
+V_{xR}=u,
+\qquad
+V_{yR}=v-b r.
+$$
+
+### Slip Angles (wheel-frame definition)
+
+$$
+\alpha_f=\operatorname{atan2}(V_{yF},\,V_{xF}),
+\qquad
+\alpha_r=\operatorname{atan2}(V_{yR},\,V_{xR}).
+$$
+
+*Linearized (small angles):* \( \alpha_f \approx \dfrac{v+a r}{u}-\delta,\quad \alpha_r \approx \dfrac{v-b r}{u}. \)
+
