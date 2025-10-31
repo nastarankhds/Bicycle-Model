@@ -102,4 +102,10 @@ $$ \alpha_f \approx \dfrac{v+l_f r}{u}-{\delta} $$
 
 $$ \alpha_r \approx \dfrac{v-l_r r}{u} $$
 
+in other words:
+
+$$ \alpha_f \approx {\beta} + \dfrac{l_f r}{u}-{\delta} $$
+
+$$ \alpha_r \approx {\beta} - \dfrac{l_r r}{u} $$
+
 
