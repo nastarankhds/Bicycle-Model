@@ -114,5 +114,5 @@ $$ \alpha_r \approx {\beta} - \dfrac{l_r r}{u} $$
 we start with the basicest rule in physics:
 
 $$
-\{\sigma{F}} = 
+\{\sum{F}} = 
 $$
