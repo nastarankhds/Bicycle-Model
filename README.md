@@ -2,7 +2,7 @@
 Bicycle Model Derivation
 
 
-<img width="800" height="586" alt="image" src="https://github.com/user-attachments/assets/da1080be-4dd1-47db-a5ff-d5a11766b81f" />
+<img width="700" height="586" alt="image" src="https://github.com/user-attachments/assets/da1080be-4dd1-47db-a5ff-d5a11766b81f" />
 
 The figure above shows diagram of a bicycle model or a single track model.
 
