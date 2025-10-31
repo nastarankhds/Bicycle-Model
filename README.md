@@ -133,5 +133,5 @@ $$
 $r$ :
 
 $$
-\{\{fy_f}*cos({\delta})*{l_f} + \{fyr_r} {l_r} } = 
+\{\{fy_f}* cos({\delta})*{l_f} + \{fyr_r} {l_r} } = 
 $$
