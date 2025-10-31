@@ -111,7 +111,7 @@ $$ \alpha_r \approx {\beta} - \dfrac{l_r r}{u} $$
 
 ## Single-Track model Derivation
 
-we start with the basicest rule in physics:
+we start with the most basic rule in physics:
 
 $$
 \{\sum{F_y}} = \{m}*{a_y}
